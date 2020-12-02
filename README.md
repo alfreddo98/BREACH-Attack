@@ -1,2 +1,3 @@
 # BREACH-Attack
-Simple BREACH attack with python, the attack was developed and explained in 2013 Black Hat conference by Angelo Prado, Neal Harris &amp; Yoel Gluck (Black Hat USA 2013 - SSL, gone in 30 seconds - a BREACH beyond CRIME)
+Simple BREACH attack with python, the attack was developed and explained in 2013 Black Hat conference by Angelo Prado, Neal Harris &amp; Yoel Gluck (Black Hat USA 2013 - SSL, gone in 30 seconds - a BREACH beyond CRIME).
+My attack is very basic and it is used against a simple web page which can be changed to some other more complex web page, outlook email for example (it has to be a static web page in which there are secrets and where some parameters are reflected in the code). The attack uses gnzip as the vector and searchs for the length of the compressed response form the server.
