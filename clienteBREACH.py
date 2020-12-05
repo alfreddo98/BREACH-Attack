@@ -1,6 +1,14 @@
 import urllib.parse
 import urllib.request
-
+"""
+    Function Name: enviarPeticion
+    Input: url that the request will be sent to
+           req the actual request that will be returned as an output of the function as to be sent
+           secreto the secret word that we want to find
+           extra the payload that we will add to the request in order to distinguish the secret that we are trying from the rest of the payload
+    Output: req the request ready to be sent
+    Function: Prepares the request to be sent, uses the library urllib.request
+"""
 def enviarPeticion(url,req,secreto,extra):
     url = url + secreto + extra
     req = urllib.request.Request(url)
